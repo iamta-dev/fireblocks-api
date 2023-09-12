@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "rootDirs": [
+      "src",
+      "tests"
+    ],
+    "outDir": "dist",
+    "sourceMap": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "forceConsistentCasingInFileNames":true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@domain": [
+        "src/domain/index.ts"
+      ],
+      "@domain/*": [
+        "src/domain/*"
+      ],   
+    }
+  },
+  "include": [
+    "tests/**/*.ts",
+    "src/**/*.ts",
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+}
